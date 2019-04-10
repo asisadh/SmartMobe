@@ -20,6 +20,8 @@
 		48F4CC42225E0467005F5771 /* PersistenceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC41225E0467005F5771 /* PersistenceError.swift */; };
 		48F4CC44225E0471005F5771 /* ShowAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC43225E0471005F5771 /* ShowAlert.swift */; };
 		48F4CC46225E0478005F5771 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC45225E0478005F5771 /* EndPoints.swift */; };
+		48F4CC4A225E05BA005F5771 /* ListingViewLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC49225E05BA005F5771 /* ListingViewLocalDataManager.swift */; };
+		48F4CC4C225E0773005F5771 /* ListingViewRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC4B225E0773005F5771 /* ListingViewRemoteDataManager.swift */; };
 		7193E95009A2495A01CCF96B /* Pods_SmartMobeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA463FB22E01318EAFD6274E /* Pods_SmartMobeTests.framework */; };
 		A5BA7F6FD2C1D971177B0061 /* Pods_SmartMobe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E735F6E1A1D3E197F32F6134 /* Pods_SmartMobe.framework */; };
 /* End PBXBuildFile section */
@@ -53,6 +55,8 @@
 		48F4CC41225E0467005F5771 /* PersistenceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceError.swift; sourceTree = "<group>"; };
 		48F4CC43225E0471005F5771 /* ShowAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowAlert.swift; sourceTree = "<group>"; };
 		48F4CC45225E0478005F5771 /* EndPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		48F4CC49225E05BA005F5771 /* ListingViewLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewLocalDataManager.swift; sourceTree = "<group>"; };
+		48F4CC4B225E0773005F5771 /* ListingViewRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewRemoteDataManager.swift; sourceTree = "<group>"; };
 		5D401E8A5EE713E561E3A027 /* Pods-SmartMobe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMobe.debug.xcconfig"; path = "Target Support Files/Pods-SmartMobe/Pods-SmartMobe.debug.xcconfig"; sourceTree = "<group>"; };
 		81DA997FE2173ADA5CE3EA4C /* Pods-SmartMobeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMobeTests.release.xcconfig"; path = "Target Support Files/Pods-SmartMobeTests/Pods-SmartMobeTests.release.xcconfig"; sourceTree = "<group>"; };
 		924380A131B1E421C48D5062 /* Pods-SmartMobe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMobe.release.xcconfig"; path = "Target Support Files/Pods-SmartMobe/Pods-SmartMobe.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,8 +144,8 @@
 				48F4CC33225DF8CD005F5771 /* Entity */,
 				48F4CC32225DF8AE005F5771 /* DataManager */,
 				48F4CC30225DF89F005F5771 /* Protocol */,
-				48F4CC31225DF8A4005F5771 /* WireFrame */,
 				48F4CC2F225DF899005F5771 /* Interactor */,
+				48F4CC31225DF8A4005F5771 /* WireFrame */,
 				48F4CC2E225DF893005F5771 /* Presenter */,
 				48F4CC2D225DF88F005F5771 /* View */,
 			);
@@ -187,6 +191,8 @@
 		48F4CC32225DF8AE005F5771 /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
+				48F4CC47225E057D005F5771 /* Local */,
+				48F4CC48225E058C005F5771 /* Remote */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -210,6 +216,22 @@
 				48F4CC3F225E043D005F5771 /* Model+Alamofire.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		48F4CC47225E057D005F5771 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				48F4CC49225E05BA005F5771 /* ListingViewLocalDataManager.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		48F4CC48225E058C005F5771 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				48F4CC4B225E0773005F5771 /* ListingViewRemoteDataManager.swift */,
+			);
+			path = Remote;
 			sourceTree = "<group>";
 		};
 		70D8576D8C136BB16B3C3AA0 /* Frameworks */ = {
@@ -395,6 +417,7 @@
 			files = (
 				48F4CC42225E0467005F5771 /* PersistenceError.swift in Sources */,
 				48F4CC3E225E0434005F5771 /* CoreDataStore.swift in Sources */,
+				48F4CC4A225E05BA005F5771 /* ListingViewLocalDataManager.swift in Sources */,
 				48F4CC35225DF929005F5771 /* ListingViewProtocols.swift in Sources */,
 				48F4CC3A225E00DE005F5771 /* ListRequestModel.swift in Sources */,
 				48F4CC44225E0471005F5771 /* ShowAlert.swift in Sources */,
@@ -403,6 +426,7 @@
 				48F4CC0A225DF83B005F5771 /* AppDelegate.swift in Sources */,
 				48F4CC38225E00D1005F5771 /* ListResponseModel.swift in Sources */,
 				48F4CC12225DF83B005F5771 /* SmartMobe.xcdatamodeld in Sources */,
+				48F4CC4C225E0773005F5771 /* ListingViewRemoteDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

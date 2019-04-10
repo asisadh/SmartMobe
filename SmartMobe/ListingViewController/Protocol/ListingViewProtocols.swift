@@ -43,7 +43,7 @@ protocol ListingViewInteractorOutputProtocol: class{
 protocol ListingViewRemoteDataManagerInputProtocol: class{
     var requestHandler: ListingViewRemoteDataManagerOutputProtocol? {get set}
     
-    func retriveList()
+    func retriveList(request: ListRequestModel)
 }
 
 protocol ListingViewRemoteDataManagerOutputProtocol: class{
@@ -52,8 +52,8 @@ protocol ListingViewRemoteDataManagerOutputProtocol: class{
 }
 
 protocol ListingViewLocalDataManagerProtocol: class{
-    func retriveList() throws -> [Image]
-    func saveListItem() throws
+    func retriveList() throws -> [Item]
+    func saveListItem(id: Int?, url: String?, largeUrl: String?, sourceId: String?) throws
 }
 
 protocol ListingViewWireFrameProtocol: class{
