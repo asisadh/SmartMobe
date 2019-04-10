@@ -14,6 +14,7 @@ protocol ListingViewProtocol: class{
     
     func showLoading()
     func hideLoading()
+    func refreshView()
 }
 
 protocol ListingViewPresenterProtocol: class{
@@ -21,8 +22,12 @@ protocol ListingViewPresenterProtocol: class{
     var interactor: ListingViewInteractorInputProtocol? {get set}
     var wireFrame: ListingViewWireFrameProtocol? {get set}
     
+    var numberOfItems: Int {get set}
+    var list:[Image] { get set}
+    
     func viewDidLoad()
-    func showListDetail(list: [Image])
+    func showListDetail(item: Image)
+    func item(at row: Int) -> Image
 }
 
 protocol ListingViewInteractorInputProtocol: class{

@@ -9,24 +9,33 @@
 import Foundation
 
 class ListingViewPresenter: ListingViewPresenterProtocol{
+   
     var view: ListingViewProtocol?
-    
     var interactor: ListingViewInteractorInputProtocol?
-    
     var wireFrame: ListingViewWireFrameProtocol?
     
+    var numberOfItems: Int = 0
+    var list: [Image] = []
+    
     func viewDidLoad() {
+        view?.showLoading()
+        interactor?.retriveList()
+    }
+    
+    func showListDetail(item: Image) {
         
     }
     
-    func showListDetail(list: [Image]) {
-        
+    func item(at row: Int) -> Image {
+        return list[row]
     }
 }
 
 extension ListingViewPresenter: ListingViewInteractorOutputProtocol{
     func didRetriveList(list: [Image]) {
         view?.hideLoading()
+        self.list = list
+        view?.refreshView()
     }
     
     func onError(message: String) {

@@ -24,6 +24,11 @@ class ListingView: UIViewController{
 
 extension ListingView: ListingViewProtocol{
     
+    func refreshView() {
+        tableView.reloadData()
+    }
+    
+    
     func showLoading() {
         
     }
@@ -36,13 +41,19 @@ extension ListingView: ListingViewProtocol{
 extension ListingView: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        if let count = presenter?.numberOfItems{
+            return count
+        }
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! ListingViewTableCellView
-        cell.setup(data: Image(id: 12, url: "some", largeURL: "some", sourceID: "some"))
-        cell.selectionStyle = .none
+    
+        if let data = presenter?.item(at: indexPath.row){
+            cell.setup(data: data)
+            cell.selectionStyle = .none
+        }
         return cell
     }
     
