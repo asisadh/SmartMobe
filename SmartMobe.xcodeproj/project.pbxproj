@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		48F4CC0A225DF83B005F5771 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC09225DF83B005F5771 /* AppDelegate.swift */; };
+		48F4CC12225DF83B005F5771 /* SmartMobe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC10225DF83B005F5771 /* SmartMobe.xcdatamodeld */; };
+		48F4CC14225DF83D005F5771 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48F4CC13225DF83D005F5771 /* Assets.xcassets */; };
+		48F4CC17225DF83D005F5771 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48F4CC15225DF83D005F5771 /* LaunchScreen.storyboard */; };
+		48F4CC22225DF83D005F5771 /* SmartMobeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC21225DF83D005F5771 /* SmartMobeTests.swift */; };
+		48F4CC35225DF929005F5771 /* ListingViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC34225DF929005F5771 /* ListingViewProtocols.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		48F4CC1E225DF83D005F5771 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48F4CBFE225DF83B005F5771 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48F4CC05225DF83B005F5771;
+			remoteInfo = SmartMobe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		48F4CC06225DF83B005F5771 /* SmartMobe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartMobe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48F4CC09225DF83B005F5771 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		48F4CC11225DF83B005F5771 /* SmartMobe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartMobe.xcdatamodel; sourceTree = "<group>"; };
+		48F4CC13225DF83D005F5771 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		48F4CC16225DF83D005F5771 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		48F4CC18225DF83D005F5771 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48F4CC1D225DF83D005F5771 /* SmartMobeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartMobeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		48F4CC21225DF83D005F5771 /* SmartMobeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartMobeTests.swift; sourceTree = "<group>"; };
+		48F4CC23225DF83D005F5771 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48F4CC34225DF929005F5771 /* ListingViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewProtocols.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48F4CC03225DF83B005F5771 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48F4CC1A225DF83D005F5771 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48F4CBFD225DF83B005F5771 = {
+			isa = PBXGroup;
+			children = (
+				48F4CC08225DF83B005F5771 /* SmartMobe */,
+				48F4CC20225DF83D005F5771 /* SmartMobeTests */,
+				48F4CC07225DF83B005F5771 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		48F4CC07225DF83B005F5771 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48F4CC06225DF83B005F5771 /* SmartMobe.app */,
+				48F4CC1D225DF83D005F5771 /* SmartMobeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48F4CC08225DF83B005F5771 /* SmartMobe */ = {
+			isa = PBXGroup;
+			children = (
+				48F4CC2C225DF884005F5771 /* ListingViewController */,
+				48F4CC09225DF83B005F5771 /* AppDelegate.swift */,
+				48F4CC13225DF83D005F5771 /* Assets.xcassets */,
+				48F4CC15225DF83D005F5771 /* LaunchScreen.storyboard */,
+				48F4CC18225DF83D005F5771 /* Info.plist */,
+				48F4CC10225DF83B005F5771 /* SmartMobe.xcdatamodeld */,
+			);
+			path = SmartMobe;
+			sourceTree = "<group>";
+		};
+		48F4CC20225DF83D005F5771 /* SmartMobeTests */ = {
+			isa = PBXGroup;
+			children = (
+				48F4CC21225DF83D005F5771 /* SmartMobeTests.swift */,
+				48F4CC23225DF83D005F5771 /* Info.plist */,
+			);
+			path = SmartMobeTests;
+			sourceTree = "<group>";
+		};
+		48F4CC2C225DF884005F5771 /* ListingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				48F4CC33225DF8CD005F5771 /* Entity */,
+				48F4CC32225DF8AE005F5771 /* DataManager */,
+				48F4CC30225DF89F005F5771 /* Protocol */,
+				48F4CC31225DF8A4005F5771 /* WireFrame */,
+				48F4CC2F225DF899005F5771 /* Interactor */,
+				48F4CC2E225DF893005F5771 /* Presenter */,
+				48F4CC2D225DF88F005F5771 /* View */,
+			);
+			path = ListingViewController;
+			sourceTree = "<group>";
+		};
+		48F4CC2D225DF88F005F5771 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		48F4CC2E225DF893005F5771 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		48F4CC2F225DF899005F5771 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		48F4CC30225DF89F005F5771 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				48F4CC34225DF929005F5771 /* ListingViewProtocols.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		48F4CC31225DF8A4005F5771 /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		48F4CC32225DF8AE005F5771 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		48F4CC33225DF8CD005F5771 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		48F4CC05225DF83B005F5771 /* SmartMobe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48F4CC26225DF83D005F5771 /* Build configuration list for PBXNativeTarget "SmartMobe" */;
+			buildPhases = (
+				48F4CC02225DF83B005F5771 /* Sources */,
+				48F4CC03225DF83B005F5771 /* Frameworks */,
+				48F4CC04225DF83B005F5771 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartMobe;
+			productName = SmartMobe;
+			productReference = 48F4CC06225DF83B005F5771 /* SmartMobe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		48F4CC1C225DF83D005F5771 /* SmartMobeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48F4CC29225DF83D005F5771 /* Build configuration list for PBXNativeTarget "SmartMobeTests" */;
+			buildPhases = (
+				48F4CC19225DF83D005F5771 /* Sources */,
+				48F4CC1A225DF83D005F5771 /* Frameworks */,
+				48F4CC1B225DF83D005F5771 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48F4CC1F225DF83D005F5771 /* PBXTargetDependency */,
+			);
+			name = SmartMobeTests;
+			productName = SmartMobeTests;
+			productReference = 48F4CC1D225DF83D005F5771 /* SmartMobeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48F4CBFE225DF83B005F5771 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Smart Mobe";
+				TargetAttributes = {
+					48F4CC05225DF83B005F5771 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					48F4CC1C225DF83D005F5771 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 48F4CC05225DF83B005F5771;
+					};
+				};
+			};
+			buildConfigurationList = 48F4CC01225DF83B005F5771 /* Build configuration list for PBXProject "SmartMobe" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 48F4CBFD225DF83B005F5771;
+			productRefGroup = 48F4CC07225DF83B005F5771 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48F4CC05225DF83B005F5771 /* SmartMobe */,
+				48F4CC1C225DF83D005F5771 /* SmartMobeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		48F4CC04225DF83B005F5771 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48F4CC17225DF83D005F5771 /* LaunchScreen.storyboard in Resources */,
+				48F4CC14225DF83D005F5771 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48F4CC1B225DF83D005F5771 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48F4CC02225DF83B005F5771 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48F4CC35225DF929005F5771 /* ListingViewProtocols.swift in Sources */,
+				48F4CC0A225DF83B005F5771 /* AppDelegate.swift in Sources */,
+				48F4CC12225DF83B005F5771 /* SmartMobe.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48F4CC19225DF83D005F5771 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48F4CC22225DF83D005F5771 /* SmartMobeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		48F4CC1F225DF83D005F5771 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48F4CC05225DF83B005F5771 /* SmartMobe */;
+			targetProxy = 48F4CC1E225DF83D005F5771 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		48F4CC15225DF83D005F5771 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48F4CC16225DF83D005F5771 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		48F4CC24225DF83D005F5771 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		48F4CC25225DF83D005F5771 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		48F4CC27225DF83D005F5771 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M95J6R4W33;
+				INFOPLIST_FILE = SmartMobe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = aashishadhikari.com.np.SmartMobe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		48F4CC28225DF83D005F5771 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M95J6R4W33;
+				INFOPLIST_FILE = SmartMobe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = aashishadhikari.com.np.SmartMobe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		48F4CC2A225DF83D005F5771 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M95J6R4W33;
+				INFOPLIST_FILE = SmartMobeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = aashishadhikari.com.np.SmartMobeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartMobe.app/SmartMobe";
+			};
+			name = Debug;
+		};
+		48F4CC2B225DF83D005F5771 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M95J6R4W33;
+				INFOPLIST_FILE = SmartMobeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = aashishadhikari.com.np.SmartMobeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartMobe.app/SmartMobe";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		48F4CC01225DF83B005F5771 /* Build configuration list for PBXProject "SmartMobe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48F4CC24225DF83D005F5771 /* Debug */,
+				48F4CC25225DF83D005F5771 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48F4CC26225DF83D005F5771 /* Build configuration list for PBXNativeTarget "SmartMobe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48F4CC27225DF83D005F5771 /* Debug */,
+				48F4CC28225DF83D005F5771 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48F4CC29225DF83D005F5771 /* Build configuration list for PBXNativeTarget "SmartMobeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48F4CC2A225DF83D005F5771 /* Debug */,
+				48F4CC2B225DF83D005F5771 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		48F4CC10225DF83B005F5771 /* SmartMobe.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				48F4CC11225DF83B005F5771 /* SmartMobe.xcdatamodel */,
+			);
+			currentVersion = 48F4CC11225DF83B005F5771 /* SmartMobe.xcdatamodel */;
+			path = SmartMobe.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 48F4CBFE225DF83B005F5771 /* Project object */;
+}
