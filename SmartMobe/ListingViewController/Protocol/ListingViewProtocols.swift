@@ -14,7 +14,6 @@ protocol ListingViewProtocol: class{
     
     func showLoading()
     func hideLoading()
-    func showError()
 }
 
 protocol ListingViewPresenterProtocol: class{

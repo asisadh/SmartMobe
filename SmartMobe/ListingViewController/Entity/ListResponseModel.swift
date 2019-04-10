@@ -16,7 +16,7 @@ struct Image: Codable {
     let id: Int?
     let url: String?
     let largeURL: String?
-    let sourceID: Int?
+    let sourceID: String?
     
     enum CodingKeys: String, CodingKey {
         case id, url

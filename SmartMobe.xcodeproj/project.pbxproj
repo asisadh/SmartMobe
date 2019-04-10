@@ -22,6 +22,12 @@
 		48F4CC46225E0478005F5771 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC45225E0478005F5771 /* EndPoints.swift */; };
 		48F4CC4A225E05BA005F5771 /* ListingViewLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC49225E05BA005F5771 /* ListingViewLocalDataManager.swift */; };
 		48F4CC4C225E0773005F5771 /* ListingViewRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC4B225E0773005F5771 /* ListingViewRemoteDataManager.swift */; };
+		48F4CC4E225E0940005F5771 /* ListingViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC4D225E0940005F5771 /* ListingViewInteractor.swift */; };
+		48F4CC50225E0CF0005F5771 /* ListingViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC4F225E0CF0005F5771 /* ListingViewPresenter.swift */; };
+		48F4CC52225E0E59005F5771 /* SmartMobe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48F4CC51225E0E59005F5771 /* SmartMobe.storyboard */; };
+		48F4CC54225E0F2F005F5771 /* ListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC53225E0F2F005F5771 /* ListingView.swift */; };
+		48F4CC56225E0F8A005F5771 /* ListingViewTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC55225E0F8A005F5771 /* ListingViewTableCellView.swift */; };
+		48F4CC59225E1201005F5771 /* UIStoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC58225E1201005F5771 /* UIStoryBoard.swift */; };
 		7193E95009A2495A01CCF96B /* Pods_SmartMobeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA463FB22E01318EAFD6274E /* Pods_SmartMobeTests.framework */; };
 		A5BA7F6FD2C1D971177B0061 /* Pods_SmartMobe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E735F6E1A1D3E197F32F6134 /* Pods_SmartMobe.framework */; };
 /* End PBXBuildFile section */
@@ -57,6 +63,12 @@
 		48F4CC45225E0478005F5771 /* EndPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
 		48F4CC49225E05BA005F5771 /* ListingViewLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewLocalDataManager.swift; sourceTree = "<group>"; };
 		48F4CC4B225E0773005F5771 /* ListingViewRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewRemoteDataManager.swift; sourceTree = "<group>"; };
+		48F4CC4D225E0940005F5771 /* ListingViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewInteractor.swift; sourceTree = "<group>"; };
+		48F4CC4F225E0CF0005F5771 /* ListingViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewPresenter.swift; sourceTree = "<group>"; };
+		48F4CC51225E0E59005F5771 /* SmartMobe.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SmartMobe.storyboard; sourceTree = "<group>"; };
+		48F4CC53225E0F2F005F5771 /* ListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingView.swift; sourceTree = "<group>"; };
+		48F4CC55225E0F8A005F5771 /* ListingViewTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewTableCellView.swift; sourceTree = "<group>"; };
+		48F4CC58225E1201005F5771 /* UIStoryBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryBoard.swift; sourceTree = "<group>"; };
 		5D401E8A5EE713E561E3A027 /* Pods-SmartMobe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMobe.debug.xcconfig"; path = "Target Support Files/Pods-SmartMobe/Pods-SmartMobe.debug.xcconfig"; sourceTree = "<group>"; };
 		81DA997FE2173ADA5CE3EA4C /* Pods-SmartMobeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMobeTests.release.xcconfig"; path = "Target Support Files/Pods-SmartMobeTests/Pods-SmartMobeTests.release.xcconfig"; sourceTree = "<group>"; };
 		924380A131B1E421C48D5062 /* Pods-SmartMobe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMobe.release.xcconfig"; path = "Target Support Files/Pods-SmartMobe/Pods-SmartMobe.release.xcconfig"; sourceTree = "<group>"; };
@@ -122,9 +134,11 @@
 				48F4CC09225DF83B005F5771 /* AppDelegate.swift */,
 				48F4CC13225DF83D005F5771 /* Assets.xcassets */,
 				48F4CC3C225E0418005F5771 /* Utils */,
+				48F4CC57225E11EE005F5771 /* extensions */,
 				48F4CC15225DF83D005F5771 /* LaunchScreen.storyboard */,
 				48F4CC18225DF83D005F5771 /* Info.plist */,
 				48F4CC10225DF83B005F5771 /* SmartMobe.xcdatamodeld */,
+				48F4CC51225E0E59005F5771 /* SmartMobe.storyboard */,
 			);
 			path = SmartMobe;
 			sourceTree = "<group>";
@@ -155,6 +169,8 @@
 		48F4CC2D225DF88F005F5771 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				48F4CC53225E0F2F005F5771 /* ListingView.swift */,
+				48F4CC55225E0F8A005F5771 /* ListingViewTableCellView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -162,6 +178,7 @@
 		48F4CC2E225DF893005F5771 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				48F4CC4F225E0CF0005F5771 /* ListingViewPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -169,6 +186,7 @@
 		48F4CC2F225DF899005F5771 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				48F4CC4D225E0940005F5771 /* ListingViewInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -232,6 +250,14 @@
 				48F4CC4B225E0773005F5771 /* ListingViewRemoteDataManager.swift */,
 			);
 			path = Remote;
+			sourceTree = "<group>";
+		};
+		48F4CC57225E11EE005F5771 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				48F4CC58225E1201005F5771 /* UIStoryBoard.swift */,
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 		70D8576D8C136BB16B3C3AA0 /* Frameworks */ = {
@@ -328,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48F4CC17225DF83D005F5771 /* LaunchScreen.storyboard in Resources */,
+				48F4CC52225E0E59005F5771 /* SmartMobe.storyboard in Resources */,
 				48F4CC14225DF83D005F5771 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,7 +442,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48F4CC59225E1201005F5771 /* UIStoryBoard.swift in Sources */,
 				48F4CC42225E0467005F5771 /* PersistenceError.swift in Sources */,
+				48F4CC56225E0F8A005F5771 /* ListingViewTableCellView.swift in Sources */,
 				48F4CC3E225E0434005F5771 /* CoreDataStore.swift in Sources */,
 				48F4CC4A225E05BA005F5771 /* ListingViewLocalDataManager.swift in Sources */,
 				48F4CC35225DF929005F5771 /* ListingViewProtocols.swift in Sources */,
@@ -423,7 +452,10 @@
 				48F4CC44225E0471005F5771 /* ShowAlert.swift in Sources */,
 				48F4CC40225E043D005F5771 /* Model+Alamofire.swift in Sources */,
 				48F4CC46225E0478005F5771 /* EndPoints.swift in Sources */,
+				48F4CC50225E0CF0005F5771 /* ListingViewPresenter.swift in Sources */,
+				48F4CC4E225E0940005F5771 /* ListingViewInteractor.swift in Sources */,
 				48F4CC0A225DF83B005F5771 /* AppDelegate.swift in Sources */,
+				48F4CC54225E0F2F005F5771 /* ListingView.swift in Sources */,
 				48F4CC38225E00D1005F5771 /* ListResponseModel.swift in Sources */,
 				48F4CC12225DF83B005F5771 /* SmartMobe.xcdatamodeld in Sources */,
 				48F4CC4C225E0773005F5771 /* ListingViewRemoteDataManager.swift in Sources */,

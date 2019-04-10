@@ -37,6 +37,12 @@ class ListingViewLocalDataManager: ListingViewLocalDataManagerProtocol{
             item.url = url
             item.largeUrl = largeUrl
             item.sourceId = sourceId
+            
+            do {
+                try managedObjectContext.save()
+            } catch{
+                throw PersistenceError.couldNotSaveObject
+            }
         }
     }
 }
