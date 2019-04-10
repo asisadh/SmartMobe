@@ -23,9 +23,7 @@ protocol ListingViewPresenterProtocol: class{
     var wireFrame: ListingViewWireFrameProtocol? {get set}
     
     func viewDidLoad()
-    
-    #warning("change the string to correct model")
-    func showListDetail(list: String)
+    func showListDetail(list: [Image])
 }
 
 protocol ListingViewInteractorInputProtocol: class{
@@ -38,8 +36,7 @@ protocol ListingViewInteractorInputProtocol: class{
 
 protocol ListingViewInteractorOutputProtocol: class{
     
-    #warning("change the string to correct model")
-    func didRetriveList(list: String)
+    func didRetriveList(list: [Image])
     func onError(message: String)
 }
 
@@ -50,19 +47,17 @@ protocol ListingViewRemoteDataManagerInputProtocol: class{
 }
 
 protocol ListingViewRemoteDataManagerOutputProtocol: class{
-    func onListRetrieved(list: String)
+    func onListRetrieved(list: [Image])
     func onError(message: String)
 }
 
 protocol ListingViewLocalDataManagerProtocol: class{
-    #warning("change the string to correct model")
-    func retriveList() throws -> String
+    func retriveList() throws -> [Image]
     func saveListItem() throws
 }
 
 protocol ListingViewWireFrameProtocol: class{
     static func createListingViewModule() -> UIViewController
     
-    #warning("change the string to correct model")
-    func presentDetailScreen(from view: ListingViewProtocol, forItem item: String)
+    func presentDetailScreen(from view: ListingViewProtocol, forImage image: Image)
 }

@@ -13,6 +13,15 @@
 		48F4CC17225DF83D005F5771 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48F4CC15225DF83D005F5771 /* LaunchScreen.storyboard */; };
 		48F4CC22225DF83D005F5771 /* SmartMobeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC21225DF83D005F5771 /* SmartMobeTests.swift */; };
 		48F4CC35225DF929005F5771 /* ListingViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC34225DF929005F5771 /* ListingViewProtocols.swift */; };
+		48F4CC38225E00D1005F5771 /* ListResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC37225E00D1005F5771 /* ListResponseModel.swift */; };
+		48F4CC3A225E00DE005F5771 /* ListRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC39225E00DE005F5771 /* ListRequestModel.swift */; };
+		48F4CC3E225E0434005F5771 /* CoreDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC3D225E0434005F5771 /* CoreDataStore.swift */; };
+		48F4CC40225E043D005F5771 /* Model+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC3F225E043D005F5771 /* Model+Alamofire.swift */; };
+		48F4CC42225E0467005F5771 /* PersistenceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC41225E0467005F5771 /* PersistenceError.swift */; };
+		48F4CC44225E0471005F5771 /* ShowAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC43225E0471005F5771 /* ShowAlert.swift */; };
+		48F4CC46225E0478005F5771 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC45225E0478005F5771 /* EndPoints.swift */; };
+		7193E95009A2495A01CCF96B /* Pods_SmartMobeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA463FB22E01318EAFD6274E /* Pods_SmartMobeTests.framework */; };
+		A5BA7F6FD2C1D971177B0061 /* Pods_SmartMobe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E735F6E1A1D3E197F32F6134 /* Pods_SmartMobe.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C326734097C6ABB5924C221 /* Pods-SmartMobeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMobeTests.debug.xcconfig"; path = "Target Support Files/Pods-SmartMobeTests/Pods-SmartMobeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		48F4CC06225DF83B005F5771 /* SmartMobe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartMobe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F4CC09225DF83B005F5771 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48F4CC11225DF83B005F5771 /* SmartMobe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartMobe.xcdatamodel; sourceTree = "<group>"; };
@@ -36,6 +46,18 @@
 		48F4CC21225DF83D005F5771 /* SmartMobeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartMobeTests.swift; sourceTree = "<group>"; };
 		48F4CC23225DF83D005F5771 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48F4CC34225DF929005F5771 /* ListingViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewProtocols.swift; sourceTree = "<group>"; };
+		48F4CC37225E00D1005F5771 /* ListResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListResponseModel.swift; sourceTree = "<group>"; };
+		48F4CC39225E00DE005F5771 /* ListRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRequestModel.swift; sourceTree = "<group>"; };
+		48F4CC3D225E0434005F5771 /* CoreDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStore.swift; sourceTree = "<group>"; };
+		48F4CC3F225E043D005F5771 /* Model+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Model+Alamofire.swift"; sourceTree = "<group>"; };
+		48F4CC41225E0467005F5771 /* PersistenceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceError.swift; sourceTree = "<group>"; };
+		48F4CC43225E0471005F5771 /* ShowAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowAlert.swift; sourceTree = "<group>"; };
+		48F4CC45225E0478005F5771 /* EndPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		5D401E8A5EE713E561E3A027 /* Pods-SmartMobe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMobe.debug.xcconfig"; path = "Target Support Files/Pods-SmartMobe/Pods-SmartMobe.debug.xcconfig"; sourceTree = "<group>"; };
+		81DA997FE2173ADA5CE3EA4C /* Pods-SmartMobeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMobeTests.release.xcconfig"; path = "Target Support Files/Pods-SmartMobeTests/Pods-SmartMobeTests.release.xcconfig"; sourceTree = "<group>"; };
+		924380A131B1E421C48D5062 /* Pods-SmartMobe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMobe.release.xcconfig"; path = "Target Support Files/Pods-SmartMobe/Pods-SmartMobe.release.xcconfig"; sourceTree = "<group>"; };
+		AA463FB22E01318EAFD6274E /* Pods_SmartMobeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartMobeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E735F6E1A1D3E197F32F6134 /* Pods_SmartMobe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartMobe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5BA7F6FD2C1D971177B0061 /* Pods_SmartMobe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +73,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7193E95009A2495A01CCF96B /* Pods_SmartMobeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C60CBC132D8EC6D7B27ABA7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D401E8A5EE713E561E3A027 /* Pods-SmartMobe.debug.xcconfig */,
+				924380A131B1E421C48D5062 /* Pods-SmartMobe.release.xcconfig */,
+				2C326734097C6ABB5924C221 /* Pods-SmartMobeTests.debug.xcconfig */,
+				81DA997FE2173ADA5CE3EA4C /* Pods-SmartMobeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		48F4CBFD225DF83B005F5771 = {
 			isa = PBXGroup;
 			children = (
 				48F4CC08225DF83B005F5771 /* SmartMobe */,
 				48F4CC20225DF83D005F5771 /* SmartMobeTests */,
 				48F4CC07225DF83B005F5771 /* Products */,
+				1C60CBC132D8EC6D7B27ABA7 /* Pods */,
+				70D8576D8C136BB16B3C3AA0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +117,7 @@
 				48F4CC2C225DF884005F5771 /* ListingViewController */,
 				48F4CC09225DF83B005F5771 /* AppDelegate.swift */,
 				48F4CC13225DF83D005F5771 /* Assets.xcassets */,
+				48F4CC3C225E0418005F5771 /* Utils */,
 				48F4CC15225DF83D005F5771 /* LaunchScreen.storyboard */,
 				48F4CC18225DF83D005F5771 /* Info.plist */,
 				48F4CC10225DF83B005F5771 /* SmartMobe.xcdatamodeld */,
@@ -156,8 +194,31 @@
 		48F4CC33225DF8CD005F5771 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				48F4CC37225E00D1005F5771 /* ListResponseModel.swift */,
+				48F4CC39225E00DE005F5771 /* ListRequestModel.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		48F4CC3C225E0418005F5771 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				48F4CC45225E0478005F5771 /* EndPoints.swift */,
+				48F4CC43225E0471005F5771 /* ShowAlert.swift */,
+				48F4CC41225E0467005F5771 /* PersistenceError.swift */,
+				48F4CC3D225E0434005F5771 /* CoreDataStore.swift */,
+				48F4CC3F225E043D005F5771 /* Model+Alamofire.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		70D8576D8C136BB16B3C3AA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E735F6E1A1D3E197F32F6134 /* Pods_SmartMobe.framework */,
+				AA463FB22E01318EAFD6274E /* Pods_SmartMobeTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,9 +228,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48F4CC26225DF83D005F5771 /* Build configuration list for PBXNativeTarget "SmartMobe" */;
 			buildPhases = (
+				19B73758F5C4F632958AA6E1 /* [CP] Check Pods Manifest.lock */,
 				48F4CC02225DF83B005F5771 /* Sources */,
 				48F4CC03225DF83B005F5771 /* Frameworks */,
 				48F4CC04225DF83B005F5771 /* Resources */,
+				DAD4C8F2F0E625365C3585F0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -184,6 +247,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48F4CC29225DF83D005F5771 /* Build configuration list for PBXNativeTarget "SmartMobeTests" */;
 			buildPhases = (
+				DFED784EFCB11301384777F9 /* [CP] Check Pods Manifest.lock */,
 				48F4CC19225DF83D005F5771 /* Sources */,
 				48F4CC1A225DF83D005F5771 /* Frameworks */,
 				48F4CC1B225DF83D005F5771 /* Resources */,
@@ -255,13 +319,89 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		19B73758F5C4F632958AA6E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartMobe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAD4C8F2F0E625365C3585F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartMobe/Pods-SmartMobe-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmartMobe/Pods-SmartMobe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFED784EFCB11301384777F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartMobeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		48F4CC02225DF83B005F5771 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48F4CC42225E0467005F5771 /* PersistenceError.swift in Sources */,
+				48F4CC3E225E0434005F5771 /* CoreDataStore.swift in Sources */,
 				48F4CC35225DF929005F5771 /* ListingViewProtocols.swift in Sources */,
+				48F4CC3A225E00DE005F5771 /* ListRequestModel.swift in Sources */,
+				48F4CC44225E0471005F5771 /* ShowAlert.swift in Sources */,
+				48F4CC40225E043D005F5771 /* Model+Alamofire.swift in Sources */,
+				48F4CC46225E0478005F5771 /* EndPoints.swift in Sources */,
 				48F4CC0A225DF83B005F5771 /* AppDelegate.swift in Sources */,
+				48F4CC38225E00D1005F5771 /* ListResponseModel.swift in Sources */,
 				48F4CC12225DF83B005F5771 /* SmartMobe.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +554,7 @@
 		};
 		48F4CC27225DF83D005F5771 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D401E8A5EE713E561E3A027 /* Pods-SmartMobe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -432,6 +573,7 @@
 		};
 		48F4CC28225DF83D005F5771 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 924380A131B1E421C48D5062 /* Pods-SmartMobe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +592,7 @@
 		};
 		48F4CC2A225DF83D005F5771 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C326734097C6ABB5924C221 /* Pods-SmartMobeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +614,7 @@
 		};
 		48F4CC2B225DF83D005F5771 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81DA997FE2173ADA5CE3EA4C /* Pods-SmartMobeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
