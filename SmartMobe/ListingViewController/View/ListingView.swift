@@ -25,16 +25,17 @@ class ListingView: UIViewController{
 extension ListingView: ListingViewProtocol{
     
     func refreshView() {
+        print("refresh")
         tableView.reloadData()
     }
     
     
     func showLoading() {
-        
+        print("loading")
     }
     
     func hideLoading() {
-        
+        print("loading removed")
     }
 }
 

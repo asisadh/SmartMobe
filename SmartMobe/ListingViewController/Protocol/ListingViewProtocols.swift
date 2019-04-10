@@ -27,6 +27,7 @@ protocol ListingViewPresenterProtocol: class{
     
     func viewDidLoad()
     func showListDetail(item: Image)
+    func showError(message: String)
     func item(at row: Int) -> Image
 }
 
@@ -64,4 +65,5 @@ protocol ListingViewWireFrameProtocol: class{
     static func createListingViewModule() -> UIViewController
     
     func presentDetailScreen(from view: ListingViewProtocol, forImage image: Image)
+    func presentErrorScreen(from view: ListingViewProtocol, errorMessage message: String)
 }

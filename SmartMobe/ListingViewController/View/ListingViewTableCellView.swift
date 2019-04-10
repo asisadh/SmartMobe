@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class ListingViewTableCellView: UITableViewCell{
     
@@ -15,8 +16,10 @@ class ListingViewTableCellView: UITableViewCell{
     
     func setup(data: Image){
         
-        if let id = data.id{
+        if let id = data.id,
+            let imageUrl = data.url{
             titleLabel.text = String(id)
+            backgroundImage?.sd_setImage(with: URL(string: imageUrl),placeholderImage: UIImage(named: ""))
         }
     }
     
