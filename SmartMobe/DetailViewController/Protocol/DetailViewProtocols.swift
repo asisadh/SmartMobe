@@ -51,7 +51,7 @@ protocol DetailViewRemoteDataManagerOutputProtocol: class{
 }
 
 protocol DetailViewWireFrameProtocol: class{
-    static func createDetailViewModule() -> UIViewController
+    static func createDetailViewModule(image: Image) -> UIViewController
     
     func presentErrorScreen(from view: DetailViewProtocol, errorMessage message: String)
 }

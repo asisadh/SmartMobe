@@ -9,6 +9,7 @@
 import Foundation
 
 class ListingViewInteractor: ListingViewInteractorInputProtocol {
+    
     var presenter: ListingViewInteractorOutputProtocol?
     
     var localDataManager: ListingViewLocalDataManagerProtocol?
@@ -32,6 +33,10 @@ class ListingViewInteractor: ListingViewInteractorInputProtocol {
         }catch{
             presenter?.onError(message: PersistenceError.objectNotFound.localizedDescription)
         }
+    }
+    
+    func updateList() {
+        remoteDataManager?.retriveList(request: ListRequestModel(imageOnly: false, videoOnly: false))
     }
 }
 

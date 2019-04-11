@@ -101,11 +101,91 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0BG-Cb-Ked"/>
                     </view>
+                    <navigationItem key="navigationItem" id="pWi-Z2-v2F">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="hSh-rh-2Z8"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="vSr-6a-lW5" id="qua-Z9-8xO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Yn-tQ-9L5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="849.27536231884062" y="68.973214285714278"/>
+        </scene>
+        <!--Detail View-->
+        <scene sceneID="7Hr-Ap-INQ">
+            <objects>
+                <viewController storyboardIdentifier="DetailView" id="1I9-Oz-46l" customClass="DetailView" customModule="SmartMobe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="edr-kV-3pZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8eY-8B-dlE">
+                                <rect key="frame" x="0.0" y="44" width="414" height="717"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nLm-6T-8wT">
+                                <rect key="frame" x="0.0" y="44" width="414" height="717"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yKa-tT-Yo8">
+                                <rect key="frame" x="0.0" y="761" width="414" height="135"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZP8-9u-1ml">
+                                        <rect key="frame" x="16" y="18" width="382" height="25"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                        <color key="textColor" white="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ZP8-9u-1ml" firstAttribute="leading" secondItem="yKa-tT-Yo8" secondAttribute="leading" constant="16" id="g13-a2-7Cm"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZP8-9u-1ml" secondAttribute="trailing" constant="16" id="oqy-k6-mma"/>
+                                    <constraint firstItem="ZP8-9u-1ml" firstAttribute="top" secondItem="yKa-tT-Yo8" secondAttribute="top" constant="18" id="yVe-Dv-2DP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ho3-kh-acB" firstAttribute="trailing" secondItem="yKa-tT-Yo8" secondAttribute="trailing" id="4QK-o4-9XB"/>
+                            <constraint firstItem="8eY-8B-dlE" firstAttribute="trailing" secondItem="ho3-kh-acB" secondAttribute="trailing" id="5xD-dQ-Vnk"/>
+                            <constraint firstItem="yKa-tT-Yo8" firstAttribute="top" secondItem="nLm-6T-8wT" secondAttribute="bottom" id="9nN-DN-jmM"/>
+                            <constraint firstItem="yKa-tT-Yo8" firstAttribute="top" secondItem="8eY-8B-dlE" secondAttribute="bottom" id="9qu-r9-19b"/>
+                            <constraint firstItem="8eY-8B-dlE" firstAttribute="height" secondItem="edr-kV-3pZ" secondAttribute="height" multiplier="0.8" id="Ei2-iO-DFP"/>
+                            <constraint firstItem="nLm-6T-8wT" firstAttribute="top" secondItem="ho3-kh-acB" secondAttribute="top" id="XJD-oJ-v6i"/>
+                            <constraint firstItem="ho3-kh-acB" firstAttribute="trailing" secondItem="nLm-6T-8wT" secondAttribute="trailing" id="nxg-zU-3bX"/>
+                            <constraint firstItem="8eY-8B-dlE" firstAttribute="leading" secondItem="ho3-kh-acB" secondAttribute="leading" id="ulI-dR-Axa"/>
+                            <constraint firstAttribute="bottom" secondItem="yKa-tT-Yo8" secondAttribute="bottom" id="w3K-Wh-Cm1"/>
+                            <constraint firstItem="8eY-8B-dlE" firstAttribute="top" secondItem="ho3-kh-acB" secondAttribute="top" id="wLd-5Y-mwg"/>
+                            <constraint firstItem="nLm-6T-8wT" firstAttribute="leading" secondItem="ho3-kh-acB" secondAttribute="leading" id="wPy-5c-6ZF"/>
+                            <constraint firstItem="yKa-tT-Yo8" firstAttribute="leading" secondItem="ho3-kh-acB" secondAttribute="leading" id="xaK-1M-pEB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ho3-kh-acB"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="nLm-6T-8wT" id="CDh-uJ-eL5"/>
+                        <outlet property="titleLabel" destination="ZP8-9u-1ml" id="Haa-Ve-n3j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K5N-fD-t5L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1757.9710144927537" y="68.973214285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="428-gI-4oi">
+            <objects>
+                <navigationController storyboardIdentifier="ListingNavigationView" automaticallyAdjustsScrollViewInsets="NO" id="xlW-0F-e7g" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8gp-qX-tVF">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vfd-AN-8e7" kind="relationship" relationship="rootViewController" id="dCR-XU-dvg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fKi-FC-v8k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-60.869565217391312" y="68.973214285714278"/>
         </scene>

@@ -22,12 +22,18 @@ class ListingViewPresenter: ListingViewPresenterProtocol{
         interactor?.retriveList()
     }
     
+    func viewUpdateList() {
+        interactor?.updateList()
+    }
+    
     func item(at row: Int) -> Image {
         return list[row]
     }
     
     func showListDetail(item: Image) {
-        
+        if let view = view{
+            wireFrame?.presentDetailScreen(from: view, forImage: item)
+        }
     }
     
     func showError(message: String) {

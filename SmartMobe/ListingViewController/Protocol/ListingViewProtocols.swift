@@ -26,6 +26,7 @@ protocol ListingViewPresenterProtocol: class{
     var list:[Image] { get set}
     
     func viewDidLoad()
+    func viewUpdateList()
     func showListDetail(item: Image)
     func showError(message: String)
     func item(at row: Int) -> Image
@@ -37,6 +38,7 @@ protocol ListingViewInteractorInputProtocol: class{
     var remoteDataManager: ListingViewRemoteDataManagerInputProtocol? {get set}
     
     func retriveList()
+    func updateList()
 }
 
 protocol ListingViewInteractorOutputProtocol: class{

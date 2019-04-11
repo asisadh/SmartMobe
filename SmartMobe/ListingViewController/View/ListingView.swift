@@ -15,9 +15,14 @@ class ListingView: UIViewController{
     @IBOutlet weak var tableView: UITableView!
     
     private let identifier = "ListingViewTableCellView"
+    private let refreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.refreshControl = refreshControl
+        refreshControl.addTarget(self, action: #selector(refreshListData(_:)), for: .valueChanged)
+        refreshControl.tintColor = UIColor(red:0.25, green:0.72, blue:0.85, alpha:1.0)
+        refreshControl.attributedTitle = NSAttributedString(string: "Fetching Image Data ...")
         presenter?.viewDidLoad()
     }
 }
@@ -26,6 +31,7 @@ extension ListingView: ListingViewProtocol{
     
     func refreshView() {
         print("refresh")
+        self.refreshControl.endRefreshing()
         tableView.reloadData()
     }
     
@@ -63,6 +69,14 @@ extension ListingView: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        if let data = presenter?.item(at: indexPath.row){
+            presenter?.showListDetail(item: data)
+        }
+    }
+}
+
+extension ListingView{
+    @objc private func refreshListData(_ sender: Any) {
+        presenter?.viewUpdateList()
     }
 }
