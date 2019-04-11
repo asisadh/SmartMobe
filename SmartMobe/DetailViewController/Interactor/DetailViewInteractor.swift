@@ -24,7 +24,7 @@ class DetailViewInteractor: DetailViewInteractorInputProtocol{
 
 extension DetailViewInteractor: DetailViewRemoteDataManagerOutputProtocol{
     func onDetailReterived(image: DetailResponseModel) {
-        presenter?.didFetchDetain(image: image)
+        presenter?.didFetchDetail(image: image)
     }
     
     func onError(message: String) {

@@ -14,7 +14,7 @@ protocol DetailViewProtocol: class{
     
     func showLoading()
     func hideLoading()
-    func showDetail()
+    func showDetail(data: DetailResponseModel)
 }
 
 protocol DetailViewPresenterProtocol: class{
@@ -36,7 +36,7 @@ protocol DetailViewInteractorInputProtocol: class{
 }
 
 protocol DetailViewInteractorOutputProtocol: class{
-    func didFetchDetain(image: DetailResponseModel)
+    func didFetchDetail(image: DetailResponseModel)
     func onError(message: String)
 }
 
