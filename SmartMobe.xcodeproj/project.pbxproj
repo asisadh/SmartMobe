@@ -111,6 +111,76 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		48F2B17F225EEF130042ABCC /* SearchViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SearchViewController;
+			sourceTree = "<group>";
+		};
+		48F2B180225EEF2F0042ABCC /* DetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				48F2B181225EEF420042ABCC /* Entity */,
+				48F2B182225EEF480042ABCC /* DataManager */,
+				48F2B187225EEF720042ABCC /* Protocol */,
+				48F2B186225EEF630042ABCC /* Interactor */,
+				48F2B185225EEF5E0042ABCC /* Presenter */,
+				48F2B184225EEF560042ABCC /* WireFrame */,
+				48F2B183225EEF520042ABCC /* View */,
+			);
+			path = DetailViewController;
+			sourceTree = "<group>";
+		};
+		48F2B181225EEF420042ABCC /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		48F2B182225EEF480042ABCC /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		48F2B183225EEF520042ABCC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		48F2B184225EEF560042ABCC /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		48F2B185225EEF5E0042ABCC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		48F2B186225EEF630042ABCC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		48F2B187225EEF720042ABCC /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		48F4CBFD225DF83B005F5771 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +206,8 @@
 			children = (
 				48F4CC09225DF83B005F5771 /* AppDelegate.swift */,
 				48F4CC2C225DF884005F5771 /* ListingViewController */,
+				48F2B17F225EEF130042ABCC /* SearchViewController */,
+				48F2B180225EEF2F0042ABCC /* DetailViewController */,
 				48F4CC13225DF83D005F5771 /* Assets.xcassets */,
 				48F4CC3C225E0418005F5771 /* Utils */,
 				48F4CC57225E11EE005F5771 /* extensions */,
