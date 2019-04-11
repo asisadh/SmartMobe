@@ -25,7 +25,7 @@ class ListingViewLocalDataManager: ListingViewLocalDataManagerProtocol{
         }
     }
     
-    func saveListItem(id: Int?, url: String?, largeUrl: String?, sourceId: String?) throws {
+    func saveListItem(id: Int?, url: String?, largeUrl: String?, sourceId: Int?) throws {
         guard let managedObjectContext = CoreDataStore.managedObjectContext else {
             throw PersistenceError.managedObjectContextNotFound
         }
@@ -36,7 +36,7 @@ class ListingViewLocalDataManager: ListingViewLocalDataManagerProtocol{
             item.id = Int32(id ?? 0)
             item.url = url
             item.largeUrl = largeUrl
-            item.sourceId = sourceId
+            item.sourceId = Int32(sourceId ?? 0)
             
             do {
                 try managedObjectContext.save()

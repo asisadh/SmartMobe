@@ -20,6 +20,7 @@ protocol EndPoint{
 enum EndPoints{
     
     case listingAPI
+    case searchAPI
     case detainAPI(Int)
 }
 
@@ -27,7 +28,8 @@ extension EndPoints: EndPoint{
     var path: String {
         switch self{
             case .listingAPI:                      return "/api/v1/images/latest"
-        case .detainAPI(let id):                   return "/api/v1/images/" + String(id)
+            case .searchAPI:                       return "/api/v1/images/search"
+            case .detainAPI(let id):               return "/api/v1/images/" + String(id)
             
         }
     }

@@ -26,6 +26,11 @@ class ListingViewPresenter: ListingViewPresenterProtocol{
         interactor?.updateList()
     }
     
+    func viewSearchList(key: String) {
+        view?.showLoading()
+        interactor?.searchList(key: key)
+    }
+    
     func item(at row: Int) -> Image {
         return list[row]
     }

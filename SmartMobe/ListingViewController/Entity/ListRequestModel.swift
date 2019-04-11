@@ -11,10 +11,18 @@ import Foundation
 struct ListRequestModel{
     var imageOnly: Bool
     var videoOnly: Bool
+    var query: String?
 }
 
 extension ListRequestModel{
     var paramaters: [String: Any]{
+        
+        if let query = query{
+            return[
+                "query": query
+            ]
+        }
+        
         return [
             "images_only": imageOnly,
             "videos_only": videoOnly

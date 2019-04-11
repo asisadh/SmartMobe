@@ -20,15 +20,15 @@ class ListingViewInteractor: ListingViewInteractorInputProtocol {
         do{
             if let list = try localDataManager?.retriveList(){
                 let imageList = list.map(){
-                    return Image(id: Int($0.id), url: $0.url, largeURL: $0.largeUrl, sourceID: $0.sourceId)
+                    return Image(id: Int($0.id), url: $0.url, largeURL: $0.largeUrl, sourceID: Int($0.sourceId))
                 }
                 if imageList.isEmpty{
-                    remoteDataManager?.retriveList(request: ListRequestModel(imageOnly: false, videoOnly: false))
+                    remoteDataManager?.retriveList(request: ListRequestModel(imageOnly: false, videoOnly: false, query: nil))
                 }else{
                     presenter?.didRetriveList(list: imageList)
                 }
             }else{
-                remoteDataManager?.retriveList(request: ListRequestModel(imageOnly: false, videoOnly: false))
+                remoteDataManager?.retriveList(request: ListRequestModel(imageOnly: false, videoOnly: false, query: nil))
             }
         }catch{
             presenter?.onError(message: PersistenceError.objectNotFound.localizedDescription)
@@ -36,8 +36,13 @@ class ListingViewInteractor: ListingViewInteractorInputProtocol {
     }
     
     func updateList() {
-        remoteDataManager?.retriveList(request: ListRequestModel(imageOnly: false, videoOnly: false))
+        remoteDataManager?.retriveList(request: ListRequestModel(imageOnly: false, videoOnly: false, query: nil))
     }
+    
+    func searchList(key: String) {
+        remoteDataManager?.retriveList(request: ListRequestModel(imageOnly: false, videoOnly: false, query: key))
+    }
+    
 }
 
 extension ListingViewInteractor: ListingViewRemoteDataManagerOutputProtocol{

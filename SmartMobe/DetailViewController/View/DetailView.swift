@@ -19,7 +19,6 @@ class DetailView: UIViewController{
         super.viewDidLoad()
         presenter?.viewDidLoad()
     }
-    
 }
 
 extension DetailView: DetailViewProtocol{
@@ -34,7 +33,7 @@ extension DetailView: DetailViewProtocol{
     
     func showDetail(data: DetailResponseModel) {
         print("Show Detail")
-        if let imageURL = data.largeURL,
+        if let imageURL = data.url,
             let site = data.site,
             let copyRight = data.copyright {
                 imageView.sd_setImage(with: URL(string: imageURL),placeholderImage: UIImage(named: ""))

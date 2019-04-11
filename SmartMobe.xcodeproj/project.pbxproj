@@ -125,13 +125,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		48F2B17F225EEF130042ABCC /* SearchViewController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SearchViewController;
-			sourceTree = "<group>";
-		};
 		48F2B180225EEF2F0042ABCC /* DetailViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,7 +228,6 @@
 			children = (
 				48F4CC09225DF83B005F5771 /* AppDelegate.swift */,
 				48F4CC2C225DF884005F5771 /* ListingViewController */,
-				48F2B17F225EEF130042ABCC /* SearchViewController */,
 				48F2B180225EEF2F0042ABCC /* DetailViewController */,
 				48F4CC13225DF83D005F5771 /* Assets.xcassets */,
 				48F4CC51225E0E59005F5771 /* SmartMobe.storyboard */,

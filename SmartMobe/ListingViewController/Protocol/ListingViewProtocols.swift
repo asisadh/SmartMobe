@@ -27,6 +27,7 @@ protocol ListingViewPresenterProtocol: class{
     
     func viewDidLoad()
     func viewUpdateList()
+    func viewSearchList(key:String)
     func showListDetail(item: Image)
     func showError(message: String)
     func item(at row: Int) -> Image
@@ -39,6 +40,7 @@ protocol ListingViewInteractorInputProtocol: class{
     
     func retriveList()
     func updateList()
+    func searchList(key: String)
 }
 
 protocol ListingViewInteractorOutputProtocol: class{
@@ -60,7 +62,7 @@ protocol ListingViewRemoteDataManagerOutputProtocol: class{
 
 protocol ListingViewLocalDataManagerProtocol: class{
     func retriveList() throws -> [Item]
-    func saveListItem(id: Int?, url: String?, largeUrl: String?, sourceId: String?) throws
+    func saveListItem(id: Int?, url: String?, largeUrl: String?, sourceId: Int?) throws
 }
 
 protocol ListingViewWireFrameProtocol: class{

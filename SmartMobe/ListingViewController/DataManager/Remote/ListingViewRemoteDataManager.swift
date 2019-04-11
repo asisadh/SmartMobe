@@ -11,12 +11,18 @@ import Alamofire
 
 class ListingViewRemoteDataManager: ListingViewRemoteDataManagerInputProtocol{
     
-    
     var requestHandler: ListingViewRemoteDataManagerOutputProtocol?
     
     func retriveList(request: ListRequestModel) {
+        
+        var url = EndPoints.listingAPI.url
+        
+        if let _ = request.query{
+            url = EndPoints.searchAPI.url
+        }
+        
         Alamofire
-            .request(EndPoints.listingAPI.url, method: .get, parameters: request.paramaters)
+            .request(url, method: .get, parameters: request.paramaters)
             .validate()
             .responseListResponseModel { response in
                 switch response.result{

@@ -13,6 +13,11 @@ class ListingView: UIViewController{
     var presenter: ListingViewPresenterProtocol?
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var searchTextField: UITextField!{
+        didSet{
+            searchTextField.delegate = self
+        }
+    }
     
     private let identifier = "ListingViewTableCellView"
     private let refreshControl = UIRefreshControl()
@@ -75,8 +80,33 @@ extension ListingView: UITableViewDelegate, UITableViewDataSource{
     }
 }
 
+extension ListingView: UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        if textField == searchTextField{
+            searchTextField.resignFirstResponder()
+            if let key = searchTextField.text{
+                if !key.isEmpty{
+                    presenter?.viewSearchList(key: key)
+                }else{
+                    presenter?.showError(message: "Search keyword is empty")
+                }
+            }
+        }
+        return true
+    }
+}
+
 extension ListingView{
     @objc private func refreshListData(_ sender: Any) {
-        presenter?.viewUpdateList()
+        if let key = searchTextField.text{
+            if key.isEmpty{
+                refreshControl.attributedTitle = NSAttributedString(string: "Fetching Image Data ...")
+                presenter?.viewUpdateList()
+            }else{
+                refreshControl.attributedTitle = NSAttributedString(string: "Fetching Image Data for \(key)")
+                presenter?.viewSearchList(key: key)
+            }
+        }
     }
 }
