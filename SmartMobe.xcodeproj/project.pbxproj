@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48F2B189225EEF9A0042ABCC /* DetailViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F2B188225EEF9A0042ABCC /* DetailViewProtocols.swift */; };
+		48F2B18B225EF20B0042ABCC /* DetailViewRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F2B18A225EF20B0042ABCC /* DetailViewRemoteDataManager.swift */; };
 		48F4CC0A225DF83B005F5771 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC09225DF83B005F5771 /* AppDelegate.swift */; };
 		48F4CC12225DF83B005F5771 /* SmartMobe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC10225DF83B005F5771 /* SmartMobe.xcdatamodeld */; };
 		48F4CC14225DF83D005F5771 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48F4CC13225DF83D005F5771 /* Assets.xcassets */; };
@@ -46,6 +48,8 @@
 
 /* Begin PBXFileReference section */
 		2C326734097C6ABB5924C221 /* Pods-SmartMobeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMobeTests.debug.xcconfig"; path = "Target Support Files/Pods-SmartMobeTests/Pods-SmartMobeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		48F2B188225EEF9A0042ABCC /* DetailViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewProtocols.swift; sourceTree = "<group>"; };
+		48F2B18A225EF20B0042ABCC /* DetailViewRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewRemoteDataManager.swift; sourceTree = "<group>"; };
 		48F4CC06225DF83B005F5771 /* SmartMobe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartMobe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F4CC09225DF83B005F5771 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48F4CC11225DF83B005F5771 /* SmartMobe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartMobe.xcdatamodel; sourceTree = "<group>"; };
@@ -142,6 +146,7 @@
 		48F2B182225EEF480042ABCC /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
+				48F2B18A225EF20B0042ABCC /* DetailViewRemoteDataManager.swift */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -177,6 +182,7 @@
 		48F2B187225EEF720042ABCC /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				48F2B188225EEF9A0042ABCC /* DetailViewProtocols.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -561,11 +567,13 @@
 				48F4CC4A225E05BA005F5771 /* ListingViewLocalDataManager.swift in Sources */,
 				48F4CC35225DF929005F5771 /* ListingViewProtocols.swift in Sources */,
 				48F4CC3A225E00DE005F5771 /* ListRequestModel.swift in Sources */,
+				48F2B189225EEF9A0042ABCC /* DetailViewProtocols.swift in Sources */,
 				48F4CC44225E0471005F5771 /* ShowAlert.swift in Sources */,
 				48F4CC40225E043D005F5771 /* Model+Alamofire.swift in Sources */,
 				48F4CC46225E0478005F5771 /* EndPoints.swift in Sources */,
 				48F4CC50225E0CF0005F5771 /* ListingViewPresenter.swift in Sources */,
 				48F4CC4E225E0940005F5771 /* ListingViewInteractor.swift in Sources */,
+				48F2B18B225EF20B0042ABCC /* DetailViewRemoteDataManager.swift in Sources */,
 				48F4CC5B225E167B005F5771 /* ListingViewWireFrame.swift in Sources */,
 				48F4CC0A225DF83B005F5771 /* AppDelegate.swift in Sources */,
 				48F4CC54225E0F2F005F5771 /* ListingView.swift in Sources */,
