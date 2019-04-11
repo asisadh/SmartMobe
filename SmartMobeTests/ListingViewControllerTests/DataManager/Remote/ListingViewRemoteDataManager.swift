@@ -26,7 +26,7 @@ private class MockListingViewRemoteDataManagerTests: XCTestCase, MockListingView
         let expectation = XCTestExpectation.init(description: "...")
         
         Alamofire
-            .request(EndPoints.listingAPI.url, method: .get, parameters: ListRequestModel(imageOnly: false, videoOnly: false).paramaters)
+            .request(EndPoints.listingAPI.url, method: .get, parameters: ListRequestModel(imageOnly: false, videoOnly: false, query: nil).paramaters)
             .validate()
             .responseListResponseModel { response in
                 XCTAssertNotNil(response.data, "Response data should not be nil.")
