@@ -11,7 +11,7 @@
 		48F4CC12225DF83B005F5771 /* SmartMobe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC10225DF83B005F5771 /* SmartMobe.xcdatamodeld */; };
 		48F4CC14225DF83D005F5771 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48F4CC13225DF83D005F5771 /* Assets.xcassets */; };
 		48F4CC17225DF83D005F5771 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48F4CC15225DF83D005F5771 /* LaunchScreen.storyboard */; };
-		48F4CC22225DF83D005F5771 /* SmartMobeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC21225DF83D005F5771 /* SmartMobeTests.swift */; };
+		48F4CC22225DF83D005F5771 /* ListingViewLocalDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC21225DF83D005F5771 /* ListingViewLocalDataManagerTests.swift */; };
 		48F4CC35225DF929005F5771 /* ListingViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC34225DF929005F5771 /* ListingViewProtocols.swift */; };
 		48F4CC38225E00D1005F5771 /* ListResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC37225E00D1005F5771 /* ListResponseModel.swift */; };
 		48F4CC3A225E00DE005F5771 /* ListRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC39225E00DE005F5771 /* ListRequestModel.swift */; };
@@ -29,6 +29,7 @@
 		48F4CC56225E0F8A005F5771 /* ListingViewTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC55225E0F8A005F5771 /* ListingViewTableCellView.swift */; };
 		48F4CC59225E1201005F5771 /* UIStoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC58225E1201005F5771 /* UIStoryBoard.swift */; };
 		48F4CC5B225E167B005F5771 /* ListingViewWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC5A225E167B005F5771 /* ListingViewWireFrame.swift */; };
+		48F4CC63225E282A005F5771 /* ListingViewRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC62225E282A005F5771 /* ListingViewRemoteDataManager.swift */; };
 		7193E95009A2495A01CCF96B /* Pods_SmartMobeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA463FB22E01318EAFD6274E /* Pods_SmartMobeTests.framework */; };
 		A5BA7F6FD2C1D971177B0061 /* Pods_SmartMobe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E735F6E1A1D3E197F32F6134 /* Pods_SmartMobe.framework */; };
 /* End PBXBuildFile section */
@@ -52,7 +53,7 @@
 		48F4CC16225DF83D005F5771 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48F4CC18225DF83D005F5771 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48F4CC1D225DF83D005F5771 /* SmartMobeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartMobeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		48F4CC21225DF83D005F5771 /* SmartMobeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartMobeTests.swift; sourceTree = "<group>"; };
+		48F4CC21225DF83D005F5771 /* ListingViewLocalDataManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewLocalDataManagerTests.swift; sourceTree = "<group>"; };
 		48F4CC23225DF83D005F5771 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48F4CC34225DF929005F5771 /* ListingViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewProtocols.swift; sourceTree = "<group>"; };
 		48F4CC37225E00D1005F5771 /* ListResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListResponseModel.swift; sourceTree = "<group>"; };
@@ -71,6 +72,7 @@
 		48F4CC55225E0F8A005F5771 /* ListingViewTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewTableCellView.swift; sourceTree = "<group>"; };
 		48F4CC58225E1201005F5771 /* UIStoryBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryBoard.swift; sourceTree = "<group>"; };
 		48F4CC5A225E167B005F5771 /* ListingViewWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewWireFrame.swift; sourceTree = "<group>"; };
+		48F4CC62225E282A005F5771 /* ListingViewRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewRemoteDataManager.swift; sourceTree = "<group>"; };
 		5D401E8A5EE713E561E3A027 /* Pods-SmartMobe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMobe.debug.xcconfig"; path = "Target Support Files/Pods-SmartMobe/Pods-SmartMobe.debug.xcconfig"; sourceTree = "<group>"; };
 		81DA997FE2173ADA5CE3EA4C /* Pods-SmartMobeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMobeTests.release.xcconfig"; path = "Target Support Files/Pods-SmartMobeTests/Pods-SmartMobeTests.release.xcconfig"; sourceTree = "<group>"; };
 		924380A131B1E421C48D5062 /* Pods-SmartMobe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMobe.release.xcconfig"; path = "Target Support Files/Pods-SmartMobe/Pods-SmartMobe.release.xcconfig"; sourceTree = "<group>"; };
@@ -148,7 +150,7 @@
 		48F4CC20225DF83D005F5771 /* SmartMobeTests */ = {
 			isa = PBXGroup;
 			children = (
-				48F4CC21225DF83D005F5771 /* SmartMobeTests.swift */,
+				48F4CC5C225E1ECE005F5771 /* ListingViewControllerTests */,
 				48F4CC23225DF83D005F5771 /* Info.plist */,
 			);
 			path = SmartMobeTests;
@@ -261,6 +263,39 @@
 				48F4CC58225E1201005F5771 /* UIStoryBoard.swift */,
 			);
 			path = extensions;
+			sourceTree = "<group>";
+		};
+		48F4CC5C225E1ECE005F5771 /* ListingViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				48F4CC5F225E1F06005F5771 /* DataManager */,
+			);
+			path = ListingViewControllerTests;
+			sourceTree = "<group>";
+		};
+		48F4CC5F225E1F06005F5771 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				48F4CC61225E2809005F5771 /* Remote */,
+				48F4CC60225E1F0F005F5771 /* Local */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		48F4CC60225E1F0F005F5771 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				48F4CC21225DF83D005F5771 /* ListingViewLocalDataManagerTests.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		48F4CC61225E2809005F5771 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				48F4CC62225E282A005F5771 /* ListingViewRemoteDataManager.swift */,
+			);
+			path = Remote;
 			sourceTree = "<group>";
 		};
 		70D8576D8C136BB16B3C3AA0 /* Frameworks */ = {
@@ -472,7 +507,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48F4CC22225DF83D005F5771 /* SmartMobeTests.swift in Sources */,
+				48F4CC22225DF83D005F5771 /* ListingViewLocalDataManagerTests.swift in Sources */,
+				48F4CC63225E282A005F5771 /* ListingViewRemoteDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
