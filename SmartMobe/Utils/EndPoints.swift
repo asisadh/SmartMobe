@@ -20,12 +20,15 @@ protocol EndPoint{
 enum EndPoints{
     
     case listingAPI
+    case detainAPI(Int)
 }
 
 extension EndPoints: EndPoint{
     var path: String {
         switch self{
             case .listingAPI:                      return "/api/v1/images/latest"
+        case .detainAPI(let id):                   return "/api/v1/images/" + String(id)
+            
         }
     }
     

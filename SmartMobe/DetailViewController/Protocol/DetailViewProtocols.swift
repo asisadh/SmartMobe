@@ -36,7 +36,7 @@ protocol DetailViewInteractorInputProtocol: class{
 }
 
 protocol DetailViewInteractorOutputProtocol: class{
-    func didFetchDetain(image: Image)
+    func didFetchDetain(image: DetailResponseModel)
     func onError(message: String)
 }
 
@@ -46,7 +46,7 @@ protocol DetailViewRemoteDataManagerInputProtocol: class{
 }
 
 protocol DetailViewRemoteDataManagerOutputProtocol: class{
-    func onDetailReterived(image: Image)
+    func onDetailReterived(image: DetailResponseModel)
     func onError(message: String)
 }
 

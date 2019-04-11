@@ -47,6 +47,11 @@ extension DataRequest {
     func responseListResponseModel(queue: DispatchQueue? = nil, completionHandler: @escaping (DataResponse<ListResponseModel>) -> Void) -> Self {
         return responseDecodable(queue: queue, completionHandler: completionHandler)
     }
+    
+    @discardableResult
+    func responseDetailResponseModel(queue: DispatchQueue? = nil, completionHandler: @escaping (DataResponse<DetailResponseModel>) -> Void) -> Self {
+        return responseDecodable(queue: queue, completionHandler: completionHandler)
+    }
 }
 
 
