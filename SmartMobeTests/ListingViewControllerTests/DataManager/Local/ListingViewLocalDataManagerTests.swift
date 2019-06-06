@@ -45,7 +45,7 @@ class ListingViewLocalDataManagerTests: XCTestCase {
         let dummyData: [[String]] = [ [ "1","URL", "LargeURL", "1"], [ "2","URL2", "LargeURL2", "2"], ["3","URL3", "LargeURL3", "3"]]
         
         for data in dummyData{
-            try! localDataManager.saveListItem(id: Int(data[0]) as? Int, url: data[1] as? String, largeUrl: data[2] as? String, sourceId: Int(data[3]) as? Int)
+            try! localDataManager.saveListItem(id: Int(data[0]), url: data[1], largeUrl: data[2], sourceId: Int(data[3]))
         }
         
         let listOfData = try! localDataManager.retriveList()
