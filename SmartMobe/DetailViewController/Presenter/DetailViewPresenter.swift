@@ -9,7 +9,7 @@
 import Foundation
 
 class DetailViewPresenter: DetailViewPresenterProtocol{
-    var view: DetailViewProtocol?
+    weak var view: DetailViewProtocol?
     var wireFrame: DetailViewWireFrameProtocol?
     var interactor: DetailViewInteractorInputProtocol?
 
@@ -17,6 +17,10 @@ class DetailViewPresenter: DetailViewPresenterProtocol{
     
     init(image: Image) {
         self.image = image
+    }
+    
+    deinit {
+        print("Detail Presenter is dead.")
     }
     
     func viewDidLoad() {

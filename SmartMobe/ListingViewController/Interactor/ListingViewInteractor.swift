@@ -10,7 +10,7 @@ import Foundation
 
 class ListingViewInteractor: ListingViewInteractorInputProtocol {
     
-    var presenter: ListingViewInteractorOutputProtocol?
+    weak var presenter: ListingViewInteractorOutputProtocol?
     
     var localDataManager: ListingViewLocalDataManagerProtocol?
     

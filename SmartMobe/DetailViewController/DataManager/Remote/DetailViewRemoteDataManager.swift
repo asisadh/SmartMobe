@@ -11,7 +11,7 @@ import Alamofire
 
 class DetailViewRemoteDataManager: DetailViewRemoteDataManagerInputProtocol{
     
-    var requestHandler: DetailViewRemoteDataManagerOutputProtocol?
+    weak var requestHandler: DetailViewRemoteDataManagerOutputProtocol?
     
     func retriveDetail(imageId id: Int) {
         Alamofire

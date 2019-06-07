@@ -11,7 +11,7 @@ import Alamofire
 
 class ListingViewRemoteDataManager: ListingViewRemoteDataManagerInputProtocol{
     
-    var requestHandler: ListingViewRemoteDataManagerOutputProtocol?
+    weak var requestHandler: ListingViewRemoteDataManagerOutputProtocol?
     
     func retriveList(request: ListRequestModel) {
         

@@ -10,7 +10,7 @@ import Foundation
 
 class DetailViewInteractor: DetailViewInteractorInputProtocol{
     
-    var presenter: DetailViewInteractorOutputProtocol?
+    weak var presenter: DetailViewInteractorOutputProtocol?
     var dataManager: DetailViewRemoteDataManagerInputProtocol?
     
     func fetchDetail(image: Image) {

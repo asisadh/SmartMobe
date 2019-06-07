@@ -40,10 +40,18 @@
 		48F4CC63225E282A005F5771 /* ListingViewRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4CC62225E282A005F5771 /* ListingViewRemoteDataManager.swift */; };
 		7193E95009A2495A01CCF96B /* Pods_SmartMobeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA463FB22E01318EAFD6274E /* Pods_SmartMobeTests.framework */; };
 		A5BA7F6FD2C1D971177B0061 /* Pods_SmartMobe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E735F6E1A1D3E197F32F6134 /* Pods_SmartMobe.framework */; };
+		F022504B22A90B0B00EE9A86 /* SmartMobeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F022504A22A90B0B00EE9A86 /* SmartMobeUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		48F4CC1E225DF83D005F5771 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48F4CBFE225DF83B005F5771 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48F4CC05225DF83B005F5771;
+			remoteInfo = SmartMobe;
+		};
+		F022504D22A90B0B00EE9A86 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 48F4CBFE225DF83B005F5771 /* Project object */;
 			proxyType = 1;
@@ -94,6 +102,9 @@
 		924380A131B1E421C48D5062 /* Pods-SmartMobe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMobe.release.xcconfig"; path = "Target Support Files/Pods-SmartMobe/Pods-SmartMobe.release.xcconfig"; sourceTree = "<group>"; };
 		AA463FB22E01318EAFD6274E /* Pods_SmartMobeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartMobeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E735F6E1A1D3E197F32F6134 /* Pods_SmartMobe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartMobe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F022504822A90B0B00EE9A86 /* SmartMobeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartMobeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F022504A22A90B0B00EE9A86 /* SmartMobeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartMobeUITests.swift; sourceTree = "<group>"; };
+		F022504C22A90B0B00EE9A86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +121,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7193E95009A2495A01CCF96B /* Pods_SmartMobeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F022504522A90B0B00EE9A86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +236,7 @@
 			children = (
 				48F4CC08225DF83B005F5771 /* SmartMobe */,
 				48F4CC20225DF83D005F5771 /* SmartMobeTests */,
+				F022504922A90B0B00EE9A86 /* SmartMobeUITests */,
 				48F4CC07225DF83B005F5771 /* Products */,
 				1C60CBC132D8EC6D7B27ABA7 /* Pods */,
 				70D8576D8C136BB16B3C3AA0 /* Frameworks */,
@@ -229,6 +248,7 @@
 			children = (
 				48F4CC06225DF83B005F5771 /* SmartMobe.app */,
 				48F4CC1D225DF83D005F5771 /* SmartMobeTests.xctest */,
+				F022504822A90B0B00EE9A86 /* SmartMobeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -411,6 +431,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F022504922A90B0B00EE9A86 /* SmartMobeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F022505222A90B2100EE9A86 /* ListingViewControllerTests */,
+				F022504C22A90B0B00EE9A86 /* Info.plist */,
+			);
+			path = SmartMobeUITests;
+			sourceTree = "<group>";
+		};
+		F022505222A90B2100EE9A86 /* ListingViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F022504A22A90B0B00EE9A86 /* SmartMobeUITests.swift */,
+			);
+			path = ListingViewControllerTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -452,6 +489,24 @@
 			productReference = 48F4CC1D225DF83D005F5771 /* SmartMobeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		F022504722A90B0B00EE9A86 /* SmartMobeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F022504F22A90B0B00EE9A86 /* Build configuration list for PBXNativeTarget "SmartMobeUITests" */;
+			buildPhases = (
+				F022504422A90B0B00EE9A86 /* Sources */,
+				F022504522A90B0B00EE9A86 /* Frameworks */,
+				F022504622A90B0B00EE9A86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F022504E22A90B0B00EE9A86 /* PBXTargetDependency */,
+			);
+			name = SmartMobeUITests;
+			productName = SmartMobeUITests;
+			productReference = F022504822A90B0B00EE9A86 /* SmartMobeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -466,6 +521,10 @@
 						CreatedOnToolsVersion = 10.2;
 					};
 					48F4CC1C225DF83D005F5771 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 48F4CC05225DF83B005F5771;
+					};
+					F022504722A90B0B00EE9A86 = {
 						CreatedOnToolsVersion = 10.2;
 						TestTargetID = 48F4CC05225DF83B005F5771;
 					};
@@ -486,6 +545,7 @@
 			targets = (
 				48F4CC05225DF83B005F5771 /* SmartMobe */,
 				48F4CC1C225DF83D005F5771 /* SmartMobeTests */,
+				F022504722A90B0B00EE9A86 /* SmartMobeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -502,6 +562,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		48F4CC1B225DF83D005F5771 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F022504622A90B0B00EE9A86 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -624,6 +691,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F022504422A90B0B00EE9A86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F022504B22A90B0B00EE9A86 /* SmartMobeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -631,6 +706,11 @@
 			isa = PBXTargetDependency;
 			target = 48F4CC05225DF83B005F5771 /* SmartMobe */;
 			targetProxy = 48F4CC1E225DF83D005F5771 /* PBXContainerItemProxy */;
+		};
+		F022504E22A90B0B00EE9A86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48F4CC05225DF83B005F5771 /* SmartMobe */;
+			targetProxy = F022504D22A90B0B00EE9A86 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -846,6 +926,44 @@
 			};
 			name = Release;
 		};
+		F022505022A90B0B00EE9A86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M95J6R4W33;
+				INFOPLIST_FILE = SmartMobeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = np.com.aashishadhikari.SmartMobeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartMobe;
+			};
+			name = Debug;
+		};
+		F022505122A90B0B00EE9A86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M95J6R4W33;
+				INFOPLIST_FILE = SmartMobeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = np.com.aashishadhikari.SmartMobeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartMobe;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -872,6 +990,15 @@
 			buildConfigurations = (
 				48F4CC2A225DF83D005F5771 /* Debug */,
 				48F4CC2B225DF83D005F5771 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F022504F22A90B0B00EE9A86 /* Build configuration list for PBXNativeTarget "SmartMobeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F022505022A90B0B00EE9A86 /* Debug */,
+				F022505122A90B0B00EE9A86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
