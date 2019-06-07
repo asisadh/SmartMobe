@@ -9,9 +9,7 @@
 import UIKit
 
 enum Storyboard: String {
-    
     case Main   = "SmartMobe"
-    
 }
 
 protocol StoryboardDesignable : class {}
@@ -23,6 +21,7 @@ extension StoryboardDesignable where Self : UIViewController {
         let dynamicMetatype = Self.self
         let storyboard = UIStoryboard(name: storyboard.rawValue, bundle: bundle)
         
+        #warning("this is leaking memory fix this.")
         guard let viewController = storyboard.instantiateViewController(withIdentifier: "\(dynamicMetatype)") as? Self else {
             fatalError("Couldn’t instantiate view controller with identifier \(dynamicMetatype)")
         }
