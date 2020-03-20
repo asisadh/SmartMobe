@@ -28,7 +28,7 @@ class ListingViewPresenterTests: XCTestCase {
         listingViewPresenter.didRetriveList(list: data)
         
         XCTAssertEqual(listingViewPresenter.numberOfItems, 2, "Item should be equal to data count")
-        XCTAssertEqual(listingViewPresenter.list.count, 4, "Item should be equal to data count")
+        XCTAssertEqual(listingViewPresenter.list.count, 2, "Item should be equal to data count")
     }
 }
 
